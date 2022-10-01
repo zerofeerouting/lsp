@@ -22,6 +22,7 @@ Request an inbound channel with a specific size and duration.
 | remote_balance | body | Inbound liquidity amount in satoshis | No | integer |
 | local_balance | body | Outbound liqudity amount in satoshis | No | integer |
 | channel_expiry | body | Channel expiration in weeks | No | integer |
+| announce | body | Public (true) or private (false) channel | No | boolean |
 
 
 ##### Response
@@ -37,6 +38,7 @@ Request an inbound channel with a specific size and duration.
 | btc_address | An on-chain bitcoin address to pay the fee for this channel open | string |
 | order_id | An lsp generated order id used to look-up the status of this request | string |
 | lnurl_channel | A way to request the open via lnurl after the order is paid | string |
+| announce | body | Public (true) or private (false) channel | No | boolean |
 
 ### /lsp/channel
 
